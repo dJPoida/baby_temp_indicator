@@ -2,6 +2,14 @@
 
 This is simple Arduino Pro Micro powered Room temperature monitor with coloured indicator LED.
 
+## Features
+
+* LED is GREEN when the temperature in the room is within the ideal range (by default 18°C -> 23°C)
+* LED is RED when the temperature in the room rises above the ideal range
+* LED is BLUE when the temperature in the room falls below the ideal range
+* LED flashes when 2°C on either side of the ideal range to draw the eye
+* LED auto dims depending on the ambient room brightness
+
 ## Parts List
 
 * 1x Arduino Pro Micro
@@ -23,3 +31,16 @@ This is simple Arduino Pro Micro powered Room temperature monitor with coloured 
 ## Notes
 
 * The schematic incorrectly shows the LM35 temperature sensor because I was too lazy to find a fritzing part for the LM335z
+
+## Future capability
+
+This is designed to be quite a simple circuit using parts I had lying around so my desires to extend its capabilities are minimal, but there are a few things I may do.
+
+* **TODO:**
+    * 3d Printed Enclosure
+    
+* **Maybe:**
+    * Leverage the _Sleep_ capability of the Pro Micro and attach it to a small 3.7v LiPo battery
+    * Add a Potentiometer to calibrate the ideal 5°C temperature range
+    * Use an ESP32 or ESP8266 with WiFi instead of the Pro Micro to enable some cool push notification or IoT functionality
+    
