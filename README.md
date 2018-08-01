@@ -2,6 +2,8 @@
 
 This is simple Arduino Pro Micro powered Room temperature monitor with coloured indicator LED.
 
+![Photos](/Photos/Collage.png)
+
 ## Features
 
 * LED is GREEN when the temperature in the room is within the ideal range (by default 18°C -> 23°C)
